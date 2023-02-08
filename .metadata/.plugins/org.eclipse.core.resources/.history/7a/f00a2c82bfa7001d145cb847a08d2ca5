@@ -1,0 +1,11 @@
+package es.rf.tienda.objetos.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
+
+import es.rf.tienda.dominio.Categoria;
+
+@Service
+public interface ICategoria extends JpaRepository<Categoria, Integer>{
+
+}

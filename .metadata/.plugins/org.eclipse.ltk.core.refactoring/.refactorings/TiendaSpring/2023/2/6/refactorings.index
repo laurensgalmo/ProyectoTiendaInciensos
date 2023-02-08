@@ -1,0 +1,23 @@
+1675854604877	Delete elements
+1675854612304	Delete elements
+1675854926172	Rename package 'daos'
+1675854983930	Rename package 'dominio'
+1675855014182	Rename package 'exception'
+1675855068269	Rename package 'util'
+1675855114928	Rename package 'util'
+1675855575088	Delete element
+1675855598371	Rename package 'es.rf.tienda.interfaces.daos'
+1675855711463	Delete element
+1675855934636	Delete element
+1675857245658	Copy compilation unit
+1675857269214	Delete element
+1675861125309	Delete element
+1675873123493	Rename package 'es.rf.tienda.objetos.repository'
+1675873154213	Rename package 'es.rf.tiendaX.dao'
+1675873177348	Rename package 'es.rf.tienda.dao'
+1675873569486	Rename package 'es.rf.tiendaX.dao'
+1675873722928	Rename type 'ICategoria'
+1675873736014	Rename type 'IUsuario'
+1675873769849	Rename type 'CategoriaDao'
+1675873777431	Rename type 'UsuarioDao'
+1675873817811	Delete element

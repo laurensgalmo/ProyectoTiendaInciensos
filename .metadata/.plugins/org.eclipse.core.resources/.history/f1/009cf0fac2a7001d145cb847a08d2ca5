@@ -1,0 +1,14 @@
+package es.rf.tienda;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication(scanBasePackages = { "es.rf.tienda", "es.rf.tienda.objetos.repository" })
+
+public class TiendaSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TiendaSpringApplication.class, args);
+	}
+
+}

@@ -1,0 +1,7 @@
+package es.rf.tienda.objetos.repository;
+
+import es.rf.tienda.dominio.Categoria;
+
+public interface ICategoria extends JpaRepository<Categoria, Integer>{
+
+}

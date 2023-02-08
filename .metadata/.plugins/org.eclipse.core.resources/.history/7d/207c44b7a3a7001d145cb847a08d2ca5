@@ -1,0 +1,5 @@
+package es.rf.tienda.objetos.repository;
+
+public interface JpaRepository<T1, T2> {
+
+}

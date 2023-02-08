@@ -1,0 +1,9 @@
+package es.rf.tienda.service;
+
+public class ServicioDao<T> {
+
+	// save
+	// deleteById
+	// findAll
+	// findById
+}

@@ -1,0 +1,9 @@
+package es.rf.tienda.objetos.repository;
+
+
+
+
+public interface InterfacesDAO<T> {
+	
+	
+}

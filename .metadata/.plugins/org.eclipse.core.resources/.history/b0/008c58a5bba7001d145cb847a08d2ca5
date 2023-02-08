@@ -1,0 +1,9 @@
+package es.rf.tienda.objetos.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import es.rf.tienda.dominio.Categoria;
+
+public interface ICategoria extends CrudRepository<Categoria, Integer>{
+
+}
