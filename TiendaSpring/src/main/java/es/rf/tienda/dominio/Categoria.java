@@ -7,12 +7,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 /**
  * Nombre: Categoria
  * 
- * Descripcion: Lista de categorías
+ * Descripcion: Dominio Categoría
  * 
  * @author laura.galvez.moya
  */
@@ -22,23 +23,30 @@ import jakarta.persistence.Table;
 @Table(schema = "ALUMNO_LAURA", name = "CATEGORIAS")
 public class Categoria implements Serializable {
 
+	/**
+	 * Se crea secuencia para que haya un incremento en el número del ID
+	 */
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id_categoria; // identificador categoria
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_CATEGORIA")
+	@SequenceGenerator(name = "SEQ_CATEGORIA", sequenceName = "SEQ_CATEGORIA", allocationSize = 1)
+	private int id_categoria; // identificador categoría
 
 	@Column(nullable = false)
-	private String cat_nombre; // nombre de la categoria
+	private String cat_nombre; // nombre de la categoría
 
 	@Column
-	private String cat_descripcion; // descripcion de la categoria
+	private String cat_descripcion; // descripcion de la categoría
 
+	/**
+	 * Constructor sin parámetros
+	 */
+	
 	public Categoria() {
 	}
 
 	/**
-	 * Getter para identificador de categoria
-	 * 
-	 * @return Integer con el id de la categoria
+	 * Getter ID categoría
 	 */
 
 	public int getId_categoria() {
@@ -46,43 +54,42 @@ public class Categoria implements Serializable {
 	}
 
 	/**
-	 * Setter para identificador de categoria
+	 * Setter ID categoría
 	 * 
 	 */
+
 	public void setId_categoria(int id_categoria) {
 		this.id_categoria = id_categoria;
 	}
 
 	/**
-	 * Getter para el nombre de categoria
-	 * 
-	 * @return cadena con el nombre de la categoria
+	 * Getter nombre categoría
 	 */
+
 	public String getCat_nombre() {
 		return cat_nombre;
 	}
 
 	/**
-	 * Setter para el nombre de categoria
-	 * 
+	 * Setter nombre categoría
 	 */
+
 	public void setCat_nombre(String cat_nombre) {
 		this.cat_nombre = cat_nombre;
 	}
 
 	/**
-	 * Getter para la descripcion de categoria
-	 * 
-	 * @return cadena con la descripcion de la categoria
+	 * Getter descripción categoría
 	 */
+
 	public String getCat_descripcion() {
 		return cat_descripcion;
 	}
 
 	/**
-	 * setter para la descripcion de categoria
-	 * 
+	 * Setter descripción categoría
 	 */
+
 	public void setCat_descripcion(String cat_descripcion) {
 		this.cat_descripcion = cat_descripcion;
 	}
@@ -121,10 +128,35 @@ public class Categoria implements Serializable {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return "Categoria [id_categoria=" + id_categoria + ", cat_nombre=" + cat_nombre + ", cat_descripcion="
-				+ cat_descripcion + "]";
+	/**
+	 * Método que hace una validación sobre el ID
+	 * 
+	 * @return true si el ID es válido / false si el ID no es válido
+	 */
+
+	public boolean isValidInsert() {
+		if (this.id_categoria < 0) {
+			System.out.println("El ID no es válido");
+			return false;
+		} else {
+			System.out.println("El ID es válido");
+			return true;
+		}
 	}
 
+	/**
+	 * Método que hace una validación sobre la modificación de la categoría
+	 * 
+	 * @return true si la modificación es válida / false en caso contrario
+	 */
+
+	public boolean isValidUpdate() {
+		if (this.cat_nombre != null) {
+			System.out.println("Es válido");
+			return true;
+		} else {
+			System.out.println("NO es válido");
+			return false;
+		}
+	}
 }

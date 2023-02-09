@@ -1,7 +1,27 @@
 package es.rf.tienda.service;
 
-//TODO
+import java.util.List;
 
-//import es.rf.tienda.dominio.Categoria;
+import es.rf.tienda.dominio.Categoria;
 
-//public interface IServicioCategoria extends ServicioDao<Categoria> {}
+/**
+ * Nombre: IServicioCategoría
+ * 
+ * Descripcion: Interface
+ * 
+ * @author laura.galvez.moya
+ */
+
+public interface IServicioCategoria {
+
+	public boolean insert(Categoria t);
+
+	public boolean update(Categoria t);
+
+	public boolean deleteById(int s);
+
+	public List<Categoria> leerTodasCategorias();
+
+	public Categoria leerCategoria(int d);
+
+}
