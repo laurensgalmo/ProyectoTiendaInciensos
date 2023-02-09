@@ -78,7 +78,7 @@ public class ServicioCategoria implements IServicioCategoria {
 	/**
 	 * Método para lectura de una categoría según el ID insertado
 	 */
-
+	
 	public Categoria leerCategoria(int d) {
 		try {
 			Categoria c = cDao.findById(d).get();
