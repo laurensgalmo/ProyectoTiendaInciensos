@@ -72,7 +72,7 @@ public class ServicioCategoria implements IServicioCategoria {
 	 */
 
 	public List<Categoria> leerTodasCategorias() {
-		return cDao.findAll();
+		return cDao.findAll(); 
 	}
 
 	/**
