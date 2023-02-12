@@ -1587,3 +1587,173 @@
 2023-02-09 19:24:51,669 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2023-02-09 19:24:51,673 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-02-09 19:24:51,675 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-09 19:25:25,841 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@2ced6ca7{STOPPING}[10.0.12,sto=0]
+2023-02-09 19:25:25,873 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1748ebb7{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2023-02-09 19:25:25,957 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@30dc6cdb{/help,null,STOPPED}
+2023-02-12 14:25:19,995 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-02-12 14:25:20,698 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2023-02-12 16:40:13,919 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:40:13,998 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:40:14,003 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:40:33,566 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:40:33,572 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:40:33,578 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:41:10,283 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:41:10,288 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:41:10,292 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:42:14,817 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:42:14,831 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:42:14,835 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:43:03,916 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:43:03,920 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:43:03,924 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:43:53,653 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:43:53,659 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:43:53,665 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:46:55,198 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:46:55,205 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:46:55,208 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:49:13,151 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:49:13,157 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:49:13,161 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:51:28,791 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:51:28,806 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:51:28,808 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:52:40,052 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:52:40,059 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:52:40,062 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:53:02,751 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:53:02,756 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:53:02,759 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 16:53:58,750 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 16:53:58,756 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 16:53:58,759 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:00:37,526 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:00:37,533 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:00:37,537 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:01:07,785 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:01:07,791 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:01:07,795 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:01:20,355 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:01:20,361 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:01:20,368 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:05:42,215 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:05:42,222 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:05:42,227 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:07:05,043 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:07:05,048 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:07:05,052 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:07:47,516 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:07:47,522 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:07:47,526 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:08:03,032 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:08:03,039 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:08:03,043 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:10:58,400 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:10:58,405 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:10:58,409 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:11:23,073 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:11:23,084 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:11:23,087 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:12:26,083 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:12:26,102 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:12:26,105 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:13:52,121 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:13:52,126 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:13:52,130 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:18:33,884 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:18:33,889 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:18:33,893 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:18:41,280 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:18:41,285 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:18:41,289 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:19:03,918 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:19:03,924 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:19:03,928 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:19:52,883 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:19:52,888 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:19:52,893 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:20:23,077 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:20:23,082 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:20:23,086 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:20:35,717 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:20:35,722 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:20:35,726 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:20:39,943 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:20:39,948 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:20:39,959 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:23:55,808 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:23:55,815 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:23:55,818 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:24:02,020 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:24:02,027 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:24:02,031 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:24:11,778 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:24:11,783 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:24:11,787 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:24:15,131 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:24:15,136 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:24:15,139 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:25:52,246 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:25:52,250 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:25:52,255 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:26:12,983 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:26:12,988 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:26:12,992 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:26:56,944 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:26:56,957 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:26:56,959 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:27:00,236 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:27:00,240 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:27:00,244 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:27:39,331 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:27:39,337 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:27:39,343 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:29:34,014 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:29:34,019 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:29:34,023 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:33:15,883 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:33:15,898 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:33:15,901 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:40:59,097 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:40:59,104 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:40:59,108 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:41:13,063 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:41:13,068 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:41:13,072 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:41:40,442 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:41:40,448 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:41:40,452 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:42:19,686 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:42:19,692 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:42:19,695 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:42:34,975 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:42:34,978 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:42:34,980 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:42:38,749 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:42:38,754 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:42:38,757 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:45:24,569 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:45:24,574 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:45:24,577 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:45:40,623 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:45:40,628 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:45:40,631 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:53:10,796 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:53:10,801 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:53:10,804 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:53:19,290 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:53:19,318 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:53:19,321 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:54:50,878 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:54:50,882 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:54:50,885 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:55:49,204 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:55:49,210 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:55:49,213 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:55:52,343 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:55:52,347 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:55:52,350 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources
+2023-02-12 17:56:39,737 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-12 17:56:39,742 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-12 17:56:39,745 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\laura.galvez.moya\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\TiendaSpring\src\test\resources

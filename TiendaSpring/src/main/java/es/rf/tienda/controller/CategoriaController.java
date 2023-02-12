@@ -1,8 +1,13 @@
 package es.rf.tienda.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -61,13 +66,17 @@ public class CategoriaController {
 	 */
 
 	@PostMapping
-	public String[] crearCategoria(@RequestBody Categoria c) {
-		if (c != null) {
-			cDao.insert(c);
-			return new String[] { "200", "La categoría ha sido creada" };
+	public ResponseEntity<?> crearCategoria(@RequestBody Categoria c) {
+
+		Map<String, Object> response = new HashMap<>();
+
+		if (cDao.insert(c)) {
+			response.put("Mensaje", "La categoría ha sido creada");
 		} else {
-			return new String[] { "400", "La categoría NO ha sido creada" };
+			response.put("Mensaje", "No se ha podido crear la categoría");
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 
 	/**
@@ -78,9 +87,18 @@ public class CategoriaController {
 	 */
 
 	@PutMapping
-	public String[] modificarCategoria(@RequestBody Categoria c) {
-		cDao.update(c);
-		return new String[] { "200", "La categoría ha sido modificada" };
+	public ResponseEntity<?> modificarCategoria(@RequestBody Categoria c) {
+
+		Map<String, Object> response = new HashMap<>();
+
+		try {
+			cDao.update(c);
+			response.put("Mensaje", "La categoría ha sido modificada");
+		} catch (Exception e) {
+			response.put("Mensaje", "No se ha podido modificar la categoría");
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 
 	/**
@@ -91,8 +109,18 @@ public class CategoriaController {
 	 */
 
 	@DeleteMapping("/{id}")
-	public String[] eliminarCategoria(@PathVariable("id") Integer id) {
-		cDao.deleteById(id);
-		return new String[] { "200", "El registro ha sido eliminado" };
+	public ResponseEntity<?> eliminarCategoria(@PathVariable("id") Integer id) {
+
+		Map<String, Object> response = new HashMap<>();
+
+		try {
+			cDao.deleteById(id);
+			response.put("Mensaje", "La categoría ha sido eliminada, id " + id);
+
+		} catch (DataAccessException e) {
+			response.put("Mensaje", "No se ha podido eliminar la categoría con id " + id);
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 }

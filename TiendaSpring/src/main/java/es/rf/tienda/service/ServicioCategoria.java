@@ -2,6 +2,7 @@ package es.rf.tienda.service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,13 +44,14 @@ public class ServicioCategoria implements IServicioCategoria {
 	 */
 
 	public boolean update(Categoria t) {
-		Categoria ca = new Categoria();
-		if (t.isValidUpdate()) {
-			ca.setCat_nombre(t.getCat_nombre());
-			ca.setCat_descripcion(t.getCat_descripcion());
-			ca.setId_categoria(t.getId_categoria());
+		Optional<Categoria> ca = cDao.findById(t.getId_categoria());
+		Categoria c = ca.get();
+		if (c.isValidUpdate() && ca != null) {
+			c.setCat_nombre(t.getCat_nombre());
+			c.setCat_descripcion(t.getCat_descripcion());
+			c.setId_categoria(t.getId_categoria());
 			System.out.println("La categoría se ha modificado");
-			cDao.save(ca);
+			cDao.save(c);
 			return true;
 		} else {
 			System.out.println("La categoría NO se ha modificado");
@@ -72,13 +74,13 @@ public class ServicioCategoria implements IServicioCategoria {
 	 */
 
 	public List<Categoria> leerTodasCategorias() {
-		return cDao.findAll(); 
+		return cDao.findAll();
 	}
 
 	/**
 	 * Método para lectura de una categoría según el ID insertado
 	 */
-	
+
 	public Categoria leerCategoria(int d) {
 		try {
 			Categoria c = cDao.findById(d).get();

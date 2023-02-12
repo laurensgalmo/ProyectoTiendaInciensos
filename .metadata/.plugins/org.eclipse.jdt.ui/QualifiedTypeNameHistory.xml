@@ -21,10 +21,15 @@
     <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"/>
     <fullyQualifiedTypeName name="jakarta.annotation.Resource"/>
-    <fullyQualifiedTypeName name="es.rf.tienda.dominio.Categoria"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="es.rf.tienda.dao.ICategoriaDao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="es.rf.tienda.service.IServicioCategoria"/>
+    <fullyQualifiedTypeName name="es.rf.tienda.dominio.Categoria"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.SequenceGenerator"/>
 </qualifiedTypeNameHistroy>
