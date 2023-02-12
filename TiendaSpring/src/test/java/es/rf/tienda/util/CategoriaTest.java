@@ -26,9 +26,9 @@ class CategoriaTest {
 
 	@Test
 	void testDescripcionCategoria() {
-		assertTrue(CategoriaUtil.nombreAlfanumerico(DESCRIPCION_BUENA));
-		assertTrue(CategoriaUtil.nombreAlfanumerico(DESCRIPCION_DOS_BUENA));
-		assertFalse(CategoriaUtil.nombreAlfanumerico(DESCRIPCIÓN_MALA));
-		assertFalse(CategoriaUtil.nombreAlfanumerico(DESCRIPCIÓN_DOS_MALA));
+		assertTrue(CategoriaUtil.descAlfanumerico(DESCRIPCION_BUENA));
+		assertTrue(CategoriaUtil.descAlfanumerico(DESCRIPCION_DOS_BUENA));
+		assertFalse(CategoriaUtil.descAlfanumerico(DESCRIPCIÓN_MALA));
+		assertFalse(CategoriaUtil.descAlfanumerico(DESCRIPCIÓN_DOS_MALA));
 	}
 }
