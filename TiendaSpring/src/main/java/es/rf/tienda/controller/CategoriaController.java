@@ -111,7 +111,7 @@ public class CategoriaController {
 	@DeleteMapping("/{id}")
 	public ResponseEntity<?> eliminarCategoria(@PathVariable("id") Integer id) {
 
-		Map<String, Object> response = new HashMap<>();
+		Map<String, Object> response = new HashMap<>(); 
 
 		try {
 			cDao.deleteById(id);
