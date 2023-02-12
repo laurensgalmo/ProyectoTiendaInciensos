@@ -22,7 +22,7 @@ import es.rf.tienda.repository.ICategoriaRepository;
 public class ServicioCategoria implements IServicioCategoria {
 
 	@Autowired
-	private ICategoriaRepository cDao;
+	private ICategoriaRepository cDao; 
 
 	/**
 	 * Método para insertar/crear categorías
