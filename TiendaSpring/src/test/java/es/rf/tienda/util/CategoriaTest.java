@@ -13,8 +13,8 @@ class CategoriaTest {
 	final String NOMBRE_DOS_MALO = "inciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosas";
 	final String DESCRIPCION_BUENA = "incienso";
 	final String DESCRIPCION_DOS_BUENA = "EstoTambienEsUnaDescripcion10";
-	final String DESCRIPCIÓN_MALA = "Esto no es alfanumérico";
-	final String DESCRIPCIÓN_DOS_MALA = "EstoTampoco$";
+	final String DESCRIPCION_MALA = "Esto no es alfanumérico";
+	final String DESCRIPCION_DOS_MALA = "EstoTampoco$";
 
 	@Test
 	void testNombreCategoria() {
@@ -28,7 +28,7 @@ class CategoriaTest {
 	void testDescripcionCategoria() {
 		assertTrue(CategoriaUtil.descAlfanumerico(DESCRIPCION_BUENA));
 		assertTrue(CategoriaUtil.descAlfanumerico(DESCRIPCION_DOS_BUENA));
-		assertFalse(CategoriaUtil.descAlfanumerico(DESCRIPCIÓN_MALA));
-		assertFalse(CategoriaUtil.descAlfanumerico(DESCRIPCIÓN_DOS_MALA));
+		assertFalse(CategoriaUtil.descAlfanumerico(DESCRIPCION_MALA));
+		assertFalse(CategoriaUtil.descAlfanumerico(DESCRIPCION_DOS_MALA));
 	}
 }
