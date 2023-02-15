@@ -1,5 +1,6 @@
 package es.rf.tienda.service;
 
+import java.io.IOException;
 import java.util.List;
 
 import es.rf.tienda.dominio.Categoria;
@@ -14,7 +15,7 @@ import es.rf.tienda.dominio.Categoria;
 
 public interface IServicioCategoria {
 
-	public boolean insert(Categoria t);
+	public boolean insert(Categoria t) throws IOException;
 
 	public boolean update(Categoria t);
 

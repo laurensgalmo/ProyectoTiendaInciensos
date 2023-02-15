@@ -1,5 +1,6 @@
 package es.rf.tienda.controller;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import es.rf.tienda.dominio.Categoria;
 import es.rf.tienda.service.ServicioCategoria;
+import es.rf.tienda.util.CategoriaUtil;
 
 /**
  * Nombre: CategoriaController
@@ -63,19 +65,31 @@ public class CategoriaController {
 	 * 
 	 * @param c
 	 * @return categoría creada
+	 * @throws IOException
 	 */
 
 	@PostMapping
-	public ResponseEntity<?> crearCategoria(@RequestBody Categoria c) {
-
+	public ResponseEntity<?> crearCategoria(@RequestBody Categoria c) throws IOException {
 		Map<String, Object> response = new HashMap<>();
-
-		if (cDao.insert(c)) {
-			response.put("Mensaje", "La categoría ha sido creada");
+		if (CategoriaUtil.nombreAlfanumerico(c.getCat_nombre())) {
+			response.put("MENSAJE NOMBRE", "Nombre correcto");
+			if (CategoriaUtil.descAlfanumerico(c.getCat_descripcion())) {
+				response.put("MENSAJE DESCRIPCIÓN", "Descripción correcta");
+				if (!cDao.insert(c)) {
+					response.put("MENSAJE", "No se ha podido crear la categoría");
+					return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+				}
+			} else {
+				response.put("" + HttpStatus.INTERNAL_SERVER_ERROR,
+						"La descripción de la categoría debe contener 200 carácteres y ser alfanumérica");
+				return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
 		} else {
-			response.put("Mensaje", "No se ha podido crear la categoría");
+			response.put("" + HttpStatus.INTERNAL_SERVER_ERROR,
+					"El nombre de la categoría debe contener entre 5 y 50 carácteres");
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+		response.put("" + HttpStatus.OK, "La categoría ha sido creada");
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 
@@ -88,16 +102,26 @@ public class CategoriaController {
 
 	@PutMapping
 	public ResponseEntity<?> modificarCategoria(@RequestBody Categoria c) {
-
 		Map<String, Object> response = new HashMap<>();
-
-		try {
-			cDao.update(c);
-			response.put("Mensaje", "La categoría ha sido modificada");
-		} catch (Exception e) {
-			response.put("Mensaje", "No se ha podido modificar la categoría");
+		if (CategoriaUtil.nombreAlfanumerico(c.getCat_nombre())) {
+			response.put("MENSAJE NOMBRE", "Nombre correcto");
+			if (CategoriaUtil.descAlfanumerico(c.getCat_descripcion())) {
+				response.put("MENSAJE DESCRIPCIÓN", "Descripción correcta");
+				if (!cDao.update(c)) {
+					response.put("MENSAJE", "No se ha podido modificar la categoría");
+					return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+				}
+			} else {
+				response.put("" + HttpStatus.INTERNAL_SERVER_ERROR,
+						"La descripción de la categoría debe contener 200 carácteres y ser alfanumérica");
+				return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+		} else {
+			response.put("" + HttpStatus.INTERNAL_SERVER_ERROR,
+					"El nombre de la categoría debe contener entre 5 y 50 carácteres");
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+		response.put("" + HttpStatus.OK, "La categoría ha sido modificada");
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 
@@ -111,16 +135,13 @@ public class CategoriaController {
 	@DeleteMapping("/{id}")
 	public ResponseEntity<?> eliminarCategoria(@PathVariable("id") Integer id) {
 
-		Map<String, Object> response = new HashMap<>(); 
+		Map<String, Object> response = new HashMap<>();
 
-		try {
-			cDao.deleteById(id);
-			response.put("Mensaje", "La categoría ha sido eliminada, id " + id);
-
-		} catch (DataAccessException e) {
-			response.put("Mensaje", "No se ha podido eliminar la categoría con id " + id);
-			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		if (!cDao.deleteById(id)) {
+			response.put("" + HttpStatus.NOT_FOUND, "ID no encontrado, no se ha podido eliminar la categoría");
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
 		}
+		response.put("" + HttpStatus.OK, "La categoría ha sido eliminada");
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 }

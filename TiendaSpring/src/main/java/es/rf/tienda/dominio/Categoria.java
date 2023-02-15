@@ -1,7 +1,9 @@
 package es.rf.tienda.dominio;
 
+import java.io.IOException;
 import java.io.Serializable;
 
+import es.rf.tienda.util.CategoriaUtil;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -41,7 +43,7 @@ public class Categoria implements Serializable {
 	/**
 	 * Constructor sin parámetros
 	 */
-	
+
 	public Categoria() {
 	}
 
@@ -134,7 +136,8 @@ public class Categoria implements Serializable {
 	 * @return true si el ID es válido / false si el ID no es válido
 	 */
 
-	public boolean isValidInsert() {
+	public boolean isValidInsert() throws IOException {
+
 		if (this.id_categoria < 0) {
 			System.out.println("El ID no es válido");
 			return false;
@@ -142,6 +145,7 @@ public class Categoria implements Serializable {
 			System.out.println("El ID es válido");
 			return true;
 		}
+
 	}
 
 	/**
@@ -151,7 +155,7 @@ public class Categoria implements Serializable {
 	 */
 
 	public boolean isValidUpdate() {
-		if (this.cat_nombre != null) {
+		if (this.cat_nombre != null && this.id_categoria > 0) {
 			System.out.println("Es válido");
 			return true;
 		} else {

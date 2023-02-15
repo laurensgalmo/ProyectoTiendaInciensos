@@ -1,5 +1,6 @@
 package es.rf.tienda.service;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -22,13 +23,15 @@ import es.rf.tienda.repository.ICategoriaRepository;
 public class ServicioCategoria implements IServicioCategoria {
 
 	@Autowired
-	private ICategoriaRepository cDao; 
+	private ICategoriaRepository cDao;
 
 	/**
 	 * Método para insertar/crear categorías
+	 * 
+	 * @throws IOException
 	 */
 
-	public boolean insert(Categoria t) {
+	public boolean insert(Categoria t) throws IOException {
 		if (t.isValidInsert()) {
 			cDao.save(t);
 			System.out.println("La categoría se ha insertado");
@@ -63,10 +66,16 @@ public class ServicioCategoria implements IServicioCategoria {
 	 * Método para eliminar categorías según el ID insertado
 	 */
 
-	public boolean deleteById(int s) {
-		cDao.deleteById(s);
-		System.out.println("La categoría ha sido eliminada");
-		return true;
+	public boolean deleteById(int id) {
+		Optional<Categoria> ca = cDao.findById(id);
+		if (!ca.isEmpty()) {
+			cDao.deleteById(id);
+			System.out.println("La categoría ha sido eliminada");
+			return true;
+		}
+		System.out.println("No se ha podido eliminar. Id de categoria: " + id + " no encontrada");
+
+		return false;
 	}
 
 	/**

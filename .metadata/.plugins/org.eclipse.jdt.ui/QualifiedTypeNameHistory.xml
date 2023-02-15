@@ -40,4 +40,7 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="es.rf.tienda.util.CategoriaUtil"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.HttpClientErrorException.BadRequest"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>
