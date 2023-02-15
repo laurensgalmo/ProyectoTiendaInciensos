@@ -78,7 +78,7 @@ public class CategoriaController {
 				if (!cDao.insert(c)) {
 					response.put("MENSAJE", "No se ha podido crear la categoría");
 					return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-				} 
+				}  
 			} else {
 				response.put("" + HttpStatus.INTERNAL_SERVER_ERROR,
 						"La descripción de la categoría debe contener 200 carácteres y ser alfanumérica");
