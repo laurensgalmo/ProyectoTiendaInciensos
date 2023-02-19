@@ -3,7 +3,6 @@ package es.rf.tienda.dominio;
 import java.io.IOException;
 import java.io.Serializable;
 
-import es.rf.tienda.util.CategoriaUtil;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -44,8 +43,7 @@ public class Categoria implements Serializable {
 	 * Constructor sin parámetros
 	 */
 
-	public Categoria() {
-	}
+	public Categoria() {}
 
 	/**
 	 * Getter ID categoría

@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,8 +30,9 @@ import es.rf.tienda.util.CategoriaUtil;
  * @author laura.galvez.moya
  */
 
-@RestController
+@RestController 
 @RequestMapping("/categorias")
+@CrossOrigin(origins = "*")// Autorizo que contestes a cualquiera que te invoque; autoriza ruta
 public class CategoriaController {
 
 	@Autowired
@@ -78,7 +79,7 @@ public class CategoriaController {
 				if (!cDao.insert(c)) {
 					response.put("MENSAJE", "No se ha podido crear la categoría");
 					return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-				}  
+				}
 			} else {
 				response.put("" + HttpStatus.INTERNAL_SERVER_ERROR,
 						"La descripción de la categoría debe contener 200 carácteres y ser alfanumérica");

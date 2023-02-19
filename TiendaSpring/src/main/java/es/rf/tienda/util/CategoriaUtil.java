@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public class CategoriaUtil {
 
-	private static final String ALFANUMERIC_NOMBRE_PATTERN = "^[a-zA-Z0-9]{5,50}$";
-	private static final String ALFANUMERIC_DESC_PATTERN = "^[a-zA-Z0-9]{0,200}$";
+	private static final String ALFANUMERIC_NOMBRE_PATTERN = "^[a-zA-Z0-9\\s]{5,51}$";
+	private static final String ALFANUMERIC_DESC_PATTERN = "^[a-zA-Z0-9\\s]{0,200}$";
 
 	/**
 	 * NOMBRE: nombreAlfanumerico

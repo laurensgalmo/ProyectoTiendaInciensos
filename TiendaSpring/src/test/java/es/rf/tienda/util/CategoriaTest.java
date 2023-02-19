@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 class CategoriaTest {
 
 	final String NOMBRE_BUENO = "inciensoRosas";
-	final String NOMBRE_DOS_BUENO = "inciensoRosasinciensoRosasinciensoRosas";
-	final String NOMBRE_MALO = "incienso de rosas";
+	final String NOMBRE_DOS_BUENO = "inciensoRosas inciensoRosasinciensoRosas";
+	final String NOMBRE_MALO = "inciensoderosas~~";
 	final String NOMBRE_DOS_MALO = "inciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosasinciensoRosas";
-	final String DESCRIPCION_BUENA = "incienso";
+	final String DESCRIPCION_BUENA = "incie nso";
 	final String DESCRIPCION_DOS_BUENA = "EstoTambienEsUnaDescripcion10";
 	final String DESCRIPCION_MALA = "Esto no es alfanumérico";
 	final String DESCRIPCION_DOS_MALA = "EstoTampoco$";
