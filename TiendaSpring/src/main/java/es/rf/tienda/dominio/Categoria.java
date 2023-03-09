@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
  * Descripcion: Dominio Categoría 
  * 
  * @author laura.galvez.moya
- */
+ */ 
  
 @Entity
 @Table(schema = "ALUMNO_LAURA", name = "CATEGORIAS")
