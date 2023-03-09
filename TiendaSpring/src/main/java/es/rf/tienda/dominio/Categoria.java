@@ -14,7 +14,7 @@ import jakarta.persistence.Table;
 /**
  * Nombre: Categoria
  * 
- * Descripcion: Dominio Categoría
+ * Descripcion: Dominio Categoría 
  * 
  * @author laura.galvez.moya
  */
