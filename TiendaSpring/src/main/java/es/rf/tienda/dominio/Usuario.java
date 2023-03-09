@@ -1,13 +1,14 @@
 package es.rf.tienda.dominio;
 
+import java.io.IOException;
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 /**
@@ -25,7 +26,8 @@ public class Usuario implements Serializable {
 	// Atributos
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_USUARIO")
+	@SequenceGenerator(name = "SEQ_USUARIO", sequenceName = "SEQ_USUARIO", allocationSize = 1)
 	private int id_usuario; // identificador de usuarios
 
 	// private int id_tipo;
@@ -33,15 +35,13 @@ public class Usuario implements Serializable {
 	@Column
 	private String user_nombre; // nombre del usuario
 	@Column
+	private String user_apellidos; // apellidos del usuario
+	@Column
 	private String user_email; // email del usuario
 	@Column
 	private String user_pass; // contraseña del usuario
 	@Column
 	private String user_dni; // dni del usuario
-	@Column
-	private LocalDate user_fecAlta; // fecha creación del usuario
-	@Column
-	private LocalDate user_fecConfirmacion; // fecha de confirmación del usuario
 
 	/**
 	 * Constructor sin parámetros
@@ -136,37 +136,53 @@ public class Usuario implements Serializable {
 	}
 
 	/**
-	 * Getter fecha alta usuario
+	 * Getter apellidos usuario
 	 */
 
-	public LocalDate getUser_fecAlta() {
-		return user_fecAlta;
+	public String getUser_apellidos() {
+		return user_apellidos;
 	}
 
 	/**
-	 * Setter fecha alta usuario
+	 * Setter dni usuario
+	 */
+
+	public void setUser_apellidos(String user_apellidos) {
+		this.user_apellidos = user_apellidos;
+	}
+
+	/**
+	 * Método que hace una validación sobre el ID
 	 * 
+	 * @return true si el ID es válido / false si el ID no es válido
 	 */
 
-	public void setUser_fecAlta(LocalDate user_fecAlta) {
-		this.user_fecAlta = user_fecAlta;
+	public boolean isValidInsert() throws IOException {
+
+		if (this.id_usuario < 0) {
+			System.out.println("El ID no es válido");
+			return false;
+		} else {
+			System.out.println("El ID es válido");
+			return true;
+		}
+
 	}
 
 	/**
-	 * Getter fecha confirmación usuario
-	 */
-
-	public LocalDate getUser_fecConfirmacion() {
-		return user_fecConfirmacion;
-	}
-
-	/**
-	 * Setter fecha confimación usuario
+	 * Método que hace una validación sobre la modificación del usuario
 	 * 
+	 * @return true si la modificación es válida / false en caso contrario
 	 */
 
-	public void setUser_fecConfirmacion(LocalDate user_fecConfirmacion) {
-		this.user_fecConfirmacion = user_fecConfirmacion;
+	public boolean isValidUpdate() {
+		if (this.user_nombre != null && this.id_usuario > 0) {
+			System.out.println("Es válido");
+			return true;
+		} else {
+			System.out.println("NO es válido");
+			return false;
+		}
 	}
 
 }

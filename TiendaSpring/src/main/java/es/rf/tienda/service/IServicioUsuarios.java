@@ -14,13 +14,13 @@ import es.rf.tienda.dominio.Usuario;
 
 public interface IServicioUsuarios {
 
-	public boolean create(Usuario user);
+	public Usuario create(Usuario user);
 
 	public Usuario readUser(int id);
 
 	public List<Usuario> readAllUser();
 
-	public boolean update(Usuario user);
+	public Usuario update(Usuario user);
 
 	public boolean deleteById(int id);
 

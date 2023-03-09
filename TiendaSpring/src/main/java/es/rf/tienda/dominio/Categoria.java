@@ -18,8 +18,7 @@ import jakarta.persistence.Table;
  * 
  * @author laura.galvez.moya
  */
-
-@SuppressWarnings("serial")
+ 
 @Entity
 @Table(schema = "ALUMNO_LAURA", name = "CATEGORIAS")
 public class Categoria implements Serializable {
@@ -43,7 +42,8 @@ public class Categoria implements Serializable {
 	 * Constructor sin parámetros
 	 */
 
-	public Categoria() {}
+	public Categoria() {
+	}
 
 	/**
 	 * Getter ID categoría
